@@ -9,5 +9,8 @@ fs.readFile(inputFileName, 'utf-8', function(err, input) {
   if (err) {
     throw err;
   }
+  if (input.slice(-1) === '\n') {
+    input = input.slice(0, -1);
+  }
   console.log(solution(input));
 });
