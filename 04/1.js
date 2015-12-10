@@ -1,7 +1,6 @@
 import md5 from 'md5';
 
-export default function adventCoin(data) {
-  let target = '00000';
+export default function adventCoin(data, target = '00000') {
   let currentNumber = 1;
   let hashedString = md5(data + currentNumber);
 
