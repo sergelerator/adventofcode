@@ -1,0 +1,15 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "My solutions to the adventofcode challenges",
+  "main": "adventofcode.js",
+  "dependencies": {
+    "md5": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio Morales",
+  "license": "ISC"
+}
