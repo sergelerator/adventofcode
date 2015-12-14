@@ -1,3 +1,5 @@
+import niceWords from './niceWords';
+
 function isHappy(word) {
   let wordLength = word.length;
   let vowels = {
@@ -34,9 +36,6 @@ function isHappy(word) {
   return vowelCount >= 3 && hasDoubleLetter && !invalidSequenceFound;
 }
 
-export default function niceWords(data) {
-  return data.split('\n').reduce((happyCount, word) => {
-    let localCount = isHappy(word) && 1 || 0;
-    return happyCount + localCount;
-  }, 0);
+export default function(data) {
+  return niceWords(isHappy, data);
 }
